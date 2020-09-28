@@ -1,2 +1,2 @@
 # GCSE_CS
-Programming work for GCSE Computer science
+Repository to store Programming work for GCSE Computer science.
