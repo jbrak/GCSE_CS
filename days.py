@@ -1,4 +1,3 @@
-
 ##Script that Calculates the Amount of Hours,Minuets and Seconds in x amount of days
 days= int(input("Enter the number of days: "))
 hours=days*24
