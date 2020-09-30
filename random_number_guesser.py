@@ -1,5 +1,6 @@
 from random import randint
 repeat = "Y"
+score = 0
 
 while repeat.upper() == "Y":
     rand_num = randint(0,10)
@@ -15,6 +16,7 @@ while repeat.upper() == "Y":
         elif guess < rand_num:
             print("Your Number is too low ")
 
-
-    print("Correct")
+    score += 1
+    print("Correct!")
+    print("Your score is now", score)
     repeat = input("Do you want to take another go? Y/N\n")
