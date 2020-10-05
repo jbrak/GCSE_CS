@@ -5,7 +5,7 @@ score = 0
 while repeat.upper() == "Y":
     rand_num = randint(0,10)
 
-    print("\n", rand_num)
+#    print("\n", rand_num)
 
     guess = int(input("\nMy Number is between 0-10. Take a Guess\n"))
 
