@@ -6,3 +6,6 @@ You put in the amount of days and it will return the amount of Hours, minutes an
 
 ## Random Number Guesser
 The computer generates a random number between 0-10 and you have to guess what it is. The computer will tell you if you are too high or too low
+
+## Password Cheaker
+You type in a password and the computer cheaks if it is the right length and if it matches your name
