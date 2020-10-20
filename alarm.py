@@ -1,5 +1,5 @@
-day = 50
-hour = 7
+day = int(input("Enter the Day: "))
+hour = int(input("Enter the Hour: "))
 
 class Alarm:
     date = 1
