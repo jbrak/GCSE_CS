@@ -1,5 +1,10 @@
-lst1 = [int(input("enter a number: ")) for i in range(0,9)]
-lst2 = [int(input("enter a number: ")) for i in range(0,9)]
+from random import randint
+
+lst1 = [randint(0,i*10) for i in range(0,9)]
+lst2 = [randint(0,i*10) for i in range(0,9)]
+
+print(lst1)
+print(lst2)
 
 lst3 = [lst1[i] + lst2[i] for i in range(0,len(lst1))]
 
