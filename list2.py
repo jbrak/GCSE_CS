@@ -1,7 +1,7 @@
 from random import randint
 
-lst1 = [randint(0,i*10) for i in range(0,9)]
-lst2 = [randint(0,i*10) for i in range(0,9)]
+lst1 = [randint(1,i+10) for i in range(0,9)]
+lst2 = [randint(1,i+10) for i in range(0,9)]
 
 print(lst1)
 print(lst2)
