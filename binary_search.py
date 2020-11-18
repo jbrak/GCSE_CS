@@ -1,6 +1,6 @@
 from math import floor
 lst = [9,7,3,4,1,2,86,4,5,2,9]
-target = 1
+target = 86
 
 lst.sort()
 match = False
