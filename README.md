@@ -18,3 +18,15 @@ Practice List
 
 ## Grades
 Enter your grade it tells you if you failed, passed, merit Distinction.
+
+## List2
+List comprehension practice
+
+## Linear Search
+Program that will search a list linearly
+
+## Binary Search
+Program that will perform a binary search on a list
+
+## Mastermind
+A computerised representation of the game mastermind
