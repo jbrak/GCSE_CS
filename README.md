@@ -30,3 +30,9 @@ Program that will perform a binary search on a list
 
 ## Mastermind
 A computerised representation of the game mastermind
+
+## Bubble Sort
+Code that runs a bubble Sort
+
+## Insertion Sort
+Code that runs a insertion sort
