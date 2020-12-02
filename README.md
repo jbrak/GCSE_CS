@@ -39,3 +39,6 @@ Code that runs a insertion sort
 
 ##Number
 enter a number between 10 - 20
+
+##Card game
+Players draw cards then computer counts up who wins.
