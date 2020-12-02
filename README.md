@@ -36,3 +36,6 @@ Code that runs a bubble Sort
 
 ## Insertion Sort
 Code that runs a insertion sort
+
+##Number
+enter a number between 10 - 20
