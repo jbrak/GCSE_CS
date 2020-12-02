@@ -17,7 +17,7 @@ for i in range(1,31):
     if i % 2 == 0:
         print("Player 2 draws")
         pl2.append(card)
-        sleep(1)
+        sleep(0)
 
     else:
         print("Player 1 draws")
@@ -25,3 +25,5 @@ for i in range(1,31):
         sleep(1)
 
 print(pl1, pl2)
+
+print(pl1[3].count("yellow"))
