@@ -22,5 +22,3 @@ def score(t1,t2):
             score1 += 1
             score2 += 1
     return score1,score2
-
-print(score(("yellow",10), ("black",10)))
