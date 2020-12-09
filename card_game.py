@@ -17,16 +17,12 @@ pl2 = []
 for i in range(1,31):
     card = cards.pop(randint(0,len(cards)-1))
     if i % 2 == 0:
-        print("Player 2 draws")
         pl2.append(card)
-        sleep(1)
 
     else:
-        print("Player 1 draws")
         pl1.append(card)
-        sleep(1)
 
-print(pl1, pl2)
+
 
 score1 = 0
 score2 = 0
@@ -36,4 +32,7 @@ for i in range(0,len(pl1)):
      score1 += s1
      score2 += s2
 
-print(score1,score2)
+if s1 > s2:
+    print("player 1 wins")
+elif s2 > s1:
+    print("player 2 wins")
