@@ -5,9 +5,8 @@ lst = [int(input("Enter number " + str(i + 1) + " ")) for i in range(0, amount)]
 
 if order == "a":
     lst.sort()
-    print(lst)
 elif order == "d":
     lst.sort(reverse=True)
-    print(lst)
 else:
     print("That was not an a or d")
+print(lst)
