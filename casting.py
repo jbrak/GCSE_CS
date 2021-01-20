@@ -1,4 +1,4 @@
-num = input("Enter a number")
+num = input("Enter a number: ")
 
 for i in num:
     if i == ".":
@@ -16,3 +16,4 @@ if type(num) != float:
         print("Your number is an integer")
     except ValueError:
         print("Thats not a number")
+

@@ -45,3 +45,6 @@ Players draw cards then computer counts up who wins.
 
 ## Casting
 Does casting of integers and floats.
+
+## Casting 2
+Demostrates casting in the form of a password generator
