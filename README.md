@@ -37,8 +37,8 @@ Code that runs a bubble Sort
 ## Insertion Sort
 Code that runs a insertion sort
 
-##Number
+## Number
 enter a number between 10 - 20
 
-##Card game
+## Card game
 Players draw cards then computer counts up who wins.
