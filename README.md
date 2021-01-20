@@ -42,3 +42,6 @@ enter a number between 10 - 20
 
 ## Card game
 Players draw cards then computer counts up who wins.
+
+## Casting
+Does casting of integers and floats.
