@@ -8,6 +8,6 @@ now = datetime.now()
 password = ""
 letters = [name[randint(0, len(name) - 1)] for i in range(0, 3)]
 
-password += str(now.strftime("%M")) + letters[0] + str(age) + str(now.strftime("%S")) + "-" +letters[1] + str(now.strftime("%S")) + str(now.strftime("%Y"))
+password += str(now.strftime("%M")) + letters[0] + str(age) + str(now.strftime("%S")) + "#-#-#" +letters[1] + str(now.strftime("%S")) + str(now.strftime("%Y")) + str(now.strftime("%H"))
 
 print(password)
