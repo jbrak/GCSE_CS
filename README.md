@@ -48,3 +48,6 @@ Does casting of integers and floats.
 
 ## Casting 2
 Demostrates casting in the form of a password generator
+
+## Double Dice
+Roles 2 dice and tells you weather it is a double or not.
