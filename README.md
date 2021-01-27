@@ -51,3 +51,6 @@ Demostrates casting in the form of a password generator
 
 ## Double Dice
 Roles 2 dice and tells you weather it is a double or not.
+
+## Qualification
+Randomly generates a qualification from 3 lists
