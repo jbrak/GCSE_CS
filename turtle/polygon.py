@@ -7,6 +7,6 @@ def polygon(sides,l):
         forward(l)
         right(360 / sides)
 
-polygon(input(4,300)
+polygon(4,300)
 end_fill()
 done()
