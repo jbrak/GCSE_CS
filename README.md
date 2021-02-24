@@ -57,3 +57,9 @@ Randomly generates a qualification from 3 lists
 
 ## Weighted Rock Paper Sissors
 Example of how a random number generator could be weighted.
+
+## Functions
+Simple Function Script
+
+## Turtle
+Various scripts that create different shapes
