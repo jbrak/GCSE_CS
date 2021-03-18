@@ -10,13 +10,8 @@ def top10():
     for row in rows:
         print(row)
 
-def myRecords(name):
-    cursor.execute("SELECT name, score FROM data WHERE name = '{}' ORDER BY score DESC".format(name.lower()))
-    rows = cursor.fetchall()
+def highscore(name):
+    cursor.execute("SELECT name, score FROM data WHERE name = '{}' ORDER BY score DESC LIMIT 1".format(name.lower()))
+    row = cursor.fetchone()
 
-    if bool(rows) == False:
-        print("\nInvalid User Name")
-    else:
-        print("\n {}'s Scores:".format(name))
-        for row in rows:
-            print(row)
+    return row

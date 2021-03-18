@@ -1,29 +1,36 @@
 import sqlite3
-from query import top10, myRecords
+from random import randint
+from query import top10, highscore
 from addData import add
 
 connection = sqlite3.connect("game.db")
 cursor = connection.cursor()
 
 name = input("Enter your name: ")
+score = 150
+rand_num = randint(0,10)
+guess = int(input("\nMy Number is between 0-10. Take a Guess\n"))
 
-while True:
-    print("What do you want to do?")
-    print('''
-    Press 1 to add a new game record
-    Press 2 to show the leaderboard
-    Press 3 to show your records
-    Press 4 to quit
-    ''')
-    num = input()
+while guess != rand_num:
+    score -= randint(5,20)
+    guess = int(input("Incorrect. Take another guess:\n" ))
+    if guess > rand_num:
+        print("Your Number is too big ")
+    elif guess < rand_num:
+        print("Your Number is too low ")
 
-    if num == '1':
-        add(name,input("Enter your score: "))
-    elif num == '2':
-        top10()
-    elif num == '3':
-        myRecords(name)
-    elif num == "4":
-        break
-    else:
-        print("Invald Number")
+print("Correct!")
+print("Your score is", score)
+
+highscore = highscore(name)
+add(name,score)
+
+if bool(highscore) == False:
+    "nothing"
+elif score > highscore[-1]:
+    print("You beat your highscore of", highscore[-1])
+else:
+    print("You have not beaten your highscore of", highscore[-1],'yet.')
+    print()
+print("This is the leaderboard:\n")
+top10()
