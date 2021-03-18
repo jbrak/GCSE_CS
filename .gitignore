@@ -1,2 +1,4 @@
 .replit
 *.db
+sql/__pycache__/query.cpython-37.pyc
+sql/__pycache__/addData.cpython-37.pyc
