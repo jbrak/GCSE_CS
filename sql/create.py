@@ -7,7 +7,8 @@ sql_command = """
 CREATE TABLE data (
 id INTEGER PRIMARY KEY,
 name VARCHAR(10),
-score INTEGER);"""
+score INTEGER,
+difficulty CHAR(1));"""
 
 cursor.execute(sql_command)
 
