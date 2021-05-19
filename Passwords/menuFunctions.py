@@ -38,8 +38,8 @@ def changePassword(data = get_data()):
             i[1] = password
             write(data)
             break
-        else:
-            print("Either your username or old password is incorrect. Please try again.")
+    else:
+        print("Either your username or old password is incorrect. Please try again.")
 changePassword()
 
 #Function to display all the usernames
