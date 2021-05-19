@@ -23,7 +23,7 @@ def newUser(data = get_data()):
     #writing the code to the CSV file
     data.append([user,password])
     write(data)
-newUser()
+#newUser()
 
 
 def changePassword(data = get_data()):
@@ -40,11 +40,11 @@ def changePassword(data = get_data()):
             break
     else:
         print("Either your username or old password is incorrect. Please try again.")
-changePassword()
+#changePassword()
 
 #Function to display all the usernames
 def displayUsers(data = get_data()):
     print("\n All Usernames:")
     for i in data:
         print("•", i[0])
-displayUsers()
+#displayUsers()
