@@ -27,19 +27,20 @@ newUser()
 
 
 def changePassword(data = get_data()):
-    user = input("enter your username")
+    user = input("enter your username ")
     oldPassword = input("Enter your original password: ")
     password = input("Enter your new password: ")
     #Add password validation code here
 
     for i in data:
-        if i[0] == user & i[1] == oldPassword:
+        if (i[0] == user) & (i[1] == oldPassword):
             print("Your password has been succsufuly changed.")
             i[1] = password
+            write(data)
             break
         else:
             print("Either your username or old password is incorrect. Please try again.")
-
+changePassword()
 
 #Function to display all the usernames
 def displayUsers(data = get_data()):
