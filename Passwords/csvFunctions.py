@@ -6,11 +6,12 @@ def get_data():
         reader = csv.reader(file)
         for row in reader:
             lst.append(row)
-        return(lst)
         file.close()
+        return(lst)
 
 def write(lst):
     with open('users.csv','w') as file:
         writer = csv.writer(file)
         for i in lst:
             writer.writerow(i)
+        file.close()

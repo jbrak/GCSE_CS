@@ -23,4 +23,4 @@ while cont == 1:
     except:
         print("Invalid menu choice entered")
 
-print("\ns¡Goodbye! 👋")
+print("\nGoodbye! 👋")
