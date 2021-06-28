@@ -2,7 +2,8 @@ from csvFunctions import get_data, write
 from operator import itemgetter
 
 # Code for adding a new user
-def newUser(data = get_data()):
+def newUser():
+    data = get_data()
     #This code cheaks if the username is taken or not
     findUser = itemgetter(0)
     validUser = False
@@ -26,7 +27,8 @@ def newUser(data = get_data()):
 #newUser()
 
 
-def changePassword(data = get_data()):
+def changePassword():
+    data = get_data()
     user = input("enter your username ")
     oldPassword = input("Enter your original password: ")
     password = input("Enter your new password: ")
@@ -43,7 +45,8 @@ def changePassword(data = get_data()):
 #changePassword()
 
 #Function to display all the usernames
-def displayUsers(data = get_data()):
+def displayUsers():
+    data = get_data()
     print("\n All Usernames:")
     for i in data:
         print("•", i[0])
