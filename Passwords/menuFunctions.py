@@ -1,5 +1,6 @@
 from csvFunctions import get_data, write
 from operator import itemgetter
+from passwordVarify import password
 
 # Code for adding a new user
 def newUser():
@@ -18,11 +19,10 @@ def newUser():
         else:
             validUser = True
 
-    password = input("\n Set your password: ")
-    #Add Password Validation Code Here
+    code = password()
 
     #writing the code to the CSV file
-    data.append([user,password])
+    data.append([user,code])
     write(data)
 #newUser()
 
@@ -31,8 +31,7 @@ def changePassword():
     data = get_data()
     user = input("enter your username ")
     oldPassword = input("Enter your original password: ")
-    password = input("Enter your new password: ")
-    #Add password validation code here
+    code = password()
 
     for i in data:
         if (i[0] == user) & (i[1] == oldPassword):
