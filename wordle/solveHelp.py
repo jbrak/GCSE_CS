@@ -20,12 +20,12 @@ for j in letters:
     for i in words:
         if (j[0] in i) == True:
             lst.append(i)
-    possibleWords.append(lst)
+    possibleWords = possibleWords + lst
 
 possibleWords1 = []
 
-for i in possibleWords[0]:
-    if possibleWords[1].count(i) > 0:
+for i in possibleWords:
+    if possibleWords.count(i) > 1 and possibleWords1.count(i) == 0:
         possibleWords1.append(i)
 
 possibleWords2 = []
@@ -36,13 +36,12 @@ for j in letters:
             lst.append(i)
         elif j[0] == i[j[1]-1]:
             lst.append(i)
-    possibleWords2.append(lst)
-
+    possibleWords2 = possibleWords2 + lst
 
 possibleWords3 = []
 
-for i in possibleWords2[0]:
-    if possibleWords2[1].count(i) > 0:
+for i in possibleWords2:
+    if possibleWords2.count(i) > 1 and possibleWords3.count(i) == 0:
         possibleWords3.append(i)
 
-print(possibleWords3)
+print("3", possibleWords3)
