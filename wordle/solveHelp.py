@@ -44,4 +44,4 @@ for i in possibleWords2:
     if possibleWords2.count(i) > (len(letters)-1) and possibleWords3.count(i) == 0:
         possibleWords3.append(i)
 
-print("3", possibleWords3)
+print(possibleWords3)
