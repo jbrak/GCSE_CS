@@ -30,3 +30,25 @@ for i in range(1,10):
 	score += question()
 
 print(name,"got",score,"/10")
+
+file = open("file.txt", "r")
+
+scores = []
+for i in file:
+    scores.append(i)
+    index = i.index(',')
+    if i[:index] == name:
+        tScore = int(i[index+1:]) + score
+        index2 = scores.index(i)
+
+file.close()
+file = open("file.txt","w")
+
+try:
+    scores[index2] = (name + ',' + str(tScore))
+except:
+    scores.append(name + ',' + str(score))
+
+print(scores)
+for i in scores:
+    file.write(i)
