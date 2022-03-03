@@ -1,5 +1,5 @@
 import csv
-from terminaltables import AsciiTable
+#from terminaltables import AsciiTable
 
 def write(cs,header,data):
     f = open(cs, "w")
@@ -15,15 +15,16 @@ def read(cs):
     for i in reader:
         data.append(i)
     return(data)
+    f.close()
 
-def append(cs, data):
+def appen(cs, data):
     f = open(cs, "a")
     writer = csv.writer(f)
     writer.writerow(data)
     f.close()
 
-write("cs.csv", ["Name","Age"],[["John",1],["James",2]])
+#write("cs.csv", ["Name","Age"],[["John",1],["James",2]])
 
-append("cs.csv",["Henry",47])
+#append("cs.csv",["Henry",47])
 
-print(AsciiTable(read("cs.csv")).table)
+#print(AsciiTable(read("cs.csv")).table)
