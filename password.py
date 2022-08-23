@@ -11,6 +11,12 @@ match what:
     case 1:
         username = input("Enter your Username: ")
         password = input("Enter your Password: ")
+        try:
+            float(username)
+            print("invalid username. It your username cannot contain only numbers")
+            username = input("Enter your Username: ")
+        except:
+            pass
 
         while len(password) < 6:
             password = input("Your password is too short, Enter a longer Password: ")

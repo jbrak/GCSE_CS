@@ -1,4 +1,4 @@
-from random import randint
+strfrom random import randint
 
 colors = ["blue", "green", "red", "pink","orange", "yellow", "black"]
 
